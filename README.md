@@ -136,26 +136,6 @@ Course assignment repository.
 
 ---
 
-# 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=usman11267&show_icons=true&theme=tokyonight" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=usman11267&theme=tokyonight" height="165"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=usman11267&layout=compact&theme=tokyonight"/>
-</p>
-
----
-
-# 🏆 GitHub Achievements
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=usman11267&theme=tokyonight&row=1&column=6" />
-</p>
-
----
 
 # 🔗 Connect With Me
 
