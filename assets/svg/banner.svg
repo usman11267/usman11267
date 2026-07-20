@@ -1,183 +1,214 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#0a0f1e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050810"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0" />
-      <stop offset="30%" style="stop-color:#00d4ff;stop-opacity:0.8" />
-      <stop offset="70%" style="stop-color:#00d4ff;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0" />
-    </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:0" />
-      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:0.6" />
-      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:0" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <!-- Cyan glow filter -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
-    <filter id="textGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="strongGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="screen"/>
     </filter>
-    <clipPath id="banner-clip">
-      <rect width="1200" height="300" rx="0" ry="0"/>
-    </clipPath>
+    <filter id="glitch">
+      <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="1" result="noise" seed="2">
+        <animate attributeName="seed" values="1;3;1;5;1" dur="8s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="#00d4ff" opacity="0.03"/>
+    </pattern>
+    <!-- Cyan gradient horizontal -->
+    <linearGradient id="lineH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00d4ff" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#00d4ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineH2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0066ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0066ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0"/>
+    </linearGradient>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Inter:wght@300;400;700;900&amp;display=swap');
-      .name-text { font-family: 'JetBrains Mono', monospace; font-weight: 700; letter-spacing: 0.08em; }
-      .sub-text { font-family: 'JetBrains Mono', monospace; font-weight: 400; letter-spacing: 0.15em; }
-      .tag-text { font-family: 'JetBrains Mono', monospace; font-weight: 400; letter-spacing: 0.08em; }
-      .scan-line { animation: scan 4s linear infinite; }
-      @keyframes scan {
-        0% { transform: translateY(-300px); }
-        100% { transform: translateY(600px); }
+      .name { font-family: 'Courier New', monospace; font-weight: 900; font-size: 44px; letter-spacing: 3px; }
+      .role { font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 5px; text-transform: uppercase; }
+      .tag  { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 2px; }
+      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+      .scanAnim { animation: scanDown 5s linear infinite; }
+      @keyframes scanDown { 0%{transform:translateY(-220px)} 100%{transform:translateY(440px)} }
+      .pulse { animation: pulse 3s ease-in-out infinite; }
+      @keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:1} }
+      .float1 { animation: float1 6s ease-in-out infinite; }
+      .float2 { animation: float2 8s ease-in-out infinite; }
+      .float3 { animation: float3 7s ease-in-out infinite; }
+      @keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(3px,-4px)} }
+      @keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-4px,3px)} }
+      @keyframes float3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(2px,4px)} }
+      .orb { animation: orbPulse 4s ease-in-out infinite; }
+      @keyframes orbPulse { 0%,100%{r:2; opacity:.6} 50%{r:3.5; opacity:1} }
+      .glitchText { animation: glitchAnim 10s step-start infinite; }
+      @keyframes glitchAnim {
+        0%,92%,100% { transform: translate(0,0); fill: #ffffff; }
+        93% { transform: translate(-2px, 0); fill: #00d4ff; }
+        94% { transform: translate(2px, 0); fill: #ffffff; }
+        95% { transform: translate(0, 1px); fill: #0066ff; }
+        96% { transform: translate(0, 0); fill: #ffffff; }
       }
-      .pulse-line { animation: pulse 3s ease-in-out infinite; }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.9; }
-      }
-      .flicker { animation: flicker 8s step-start infinite; }
-      @keyframes flicker {
-        0%, 95%, 100% { opacity: 1; }
-        96% { opacity: 0.4; }
-        97% { opacity: 1; }
-        98% { opacity: 0.6; }
-        99% { opacity: 1; }
-      }
+      .dataDot { animation: dataPulse 2s ease-in-out infinite; }
+      @keyframes dataPulse { 0%,100%{opacity:.2} 50%{opacity:.8} }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bgGrad)" clip-path="url(#banner-clip)"/>
+  <rect width="900" height="220" fill="url(#bg)"/>
 
-  <!-- Grid lines - horizontal -->
-  <g opacity="0.06" stroke="#00d4ff" stroke-width="0.5">
-    <line x1="0" y1="30" x2="1200" y2="30"/>
-    <line x1="0" y1="60" x2="1200" y2="60"/>
-    <line x1="0" y1="90" x2="1200" y2="90"/>
-    <line x1="0" y1="120" x2="1200" y2="120"/>
-    <line x1="0" y1="150" x2="1200" y2="150"/>
-    <line x1="0" y1="180" x2="1200" y2="180"/>
-    <line x1="0" y1="210" x2="1200" y2="210"/>
-    <line x1="0" y1="240" x2="1200" y2="240"/>
-    <line x1="0" y1="270" x2="1200" y2="270"/>
+  <!-- Scanlines overlay -->
+  <rect width="900" height="220" fill="url(#scanlines)"/>
+
+  <!-- ── LEFT SIDE: Neural network visualization ── -->
+  <g opacity="0.18" filter="url(#cyanGlow)">
+    <!-- Network nodes -->
+    <circle class="float1" cx="38" cy="40" r="3" fill="#00d4ff"/>
+    <circle class="float2" cx="38" cy="80" r="3" fill="#00d4ff"/>
+    <circle class="float3" cx="38" cy="120" r="3" fill="#00d4ff"/>
+    <circle class="float1" cx="38" cy="160" r="3" fill="#00d4ff"/>
+    <circle class="float2" cx="38" cy="200" r="3" fill="#00d4ff"/>
+    <circle class="float2" cx="75" cy="55"  r="3" fill="#00d4ff"/>
+    <circle class="float3" cx="75" cy="100" r="3" fill="#00d4ff"/>
+    <circle class="float1" cx="75" cy="145" r="3" fill="#00d4ff"/>
+    <circle class="float3" cx="75" cy="185" r="3" fill="#00d4ff"/>
+    <circle class="float1" cx="110" cy="70"  r="3" fill="#00d4ff"/>
+    <circle class="float2" cx="110" cy="120" r="3" fill="#00d4ff"/>
+    <circle class="float3" cx="110" cy="165" r="3" fill="#00d4ff"/>
+    <circle class="float2" cx="145" cy="90"  r="3" fill="#00d4ff"/>
+    <circle class="float1" cx="145" cy="145" r="3" fill="#00d4ff"/>
+    <!-- Network connections -->
+    <line x1="38" y1="40"  x2="75" y2="55"  stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="38" y1="40"  x2="75" y2="100" stroke="#00d4ff" stroke-width=".4"/>
+    <line x1="38" y1="80"  x2="75" y2="55"  stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="38" y1="80"  x2="75" y2="100" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="38" y1="80"  x2="75" y2="145" stroke="#00d4ff" stroke-width=".4"/>
+    <line x1="38" y1="120" x2="75" y2="100" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="38" y1="120" x2="75" y2="145" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="38" y1="160" x2="75" y2="145" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="38" y1="160" x2="75" y2="185" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="38" y1="200" x2="75" y2="185" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="75" y1="55"  x2="110" y2="70"  stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="75" y1="100" x2="110" y2="70"  stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="75" y1="100" x2="110" y2="120" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="75" y1="145" x2="110" y2="120" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="75" y1="145" x2="110" y2="165" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="75" y1="185" x2="110" y2="165" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="110" y1="70"  x2="145" y2="90"  stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="110" y1="120" x2="145" y2="90"  stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="110" y1="120" x2="145" y2="145" stroke="#00d4ff" stroke-width=".6"/>
+    <line x1="110" y1="165" x2="145" y2="145" stroke="#00d4ff" stroke-width=".6"/>
   </g>
 
-  <!-- Grid lines - vertical -->
-  <g opacity="0.04" stroke="#00d4ff" stroke-width="0.5">
-    <line x1="60" y1="0" x2="60" y2="300"/>
-    <line x1="120" y1="0" x2="120" y2="300"/>
-    <line x1="180" y1="0" x2="180" y2="300"/>
-    <line x1="240" y1="0" x2="240" y2="300"/>
-    <line x1="300" y1="0" x2="300" y2="300"/>
-    <line x1="360" y1="0" x2="360" y2="300"/>
-    <line x1="420" y1="0" x2="420" y2="300"/>
-    <line x1="480" y1="0" x2="480" y2="300"/>
-    <line x1="540" y1="0" x2="540" y2="300"/>
-    <line x1="600" y1="0" x2="600" y2="300"/>
-    <line x1="660" y1="0" x2="660" y2="300"/>
-    <line x1="720" y1="0" x2="720" y2="300"/>
-    <line x1="780" y1="0" x2="780" y2="300"/>
-    <line x1="840" y1="0" x2="840" y2="300"/>
-    <line x1="900" y1="0" x2="900" y2="300"/>
-    <line x1="960" y1="0" x2="960" y2="300"/>
-    <line x1="1020" y1="0" x2="1020" y2="300"/>
-    <line x1="1080" y1="0" x2="1080" y2="300"/>
-    <line x1="1140" y1="0" x2="1140" y2="300"/>
+  <!-- ── RIGHT SIDE: Code terminal snippet ── -->
+  <g opacity="0.15">
+    <rect x="730" y="20" width="155" height="180" rx="4" fill="none" stroke="#00d4ff" stroke-width=".5"/>
+    <text x="738" y="36" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">┌─ terminal</text>
+    <text x="738" y="52" font-family="'Courier New',monospace" font-size="7" fill="#0066ff">$ init ai_agent</text>
+    <text x="738" y="65" font-family="'Courier New',monospace" font-size="7" fill="#8892b0">loading models...</text>
+    <text x="738" y="78" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">✓ LangGraph</text>
+    <text x="738" y="91" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">✓ Qdrant RAG</text>
+    <text x="738" y="104" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">✓ FastAPI</text>
+    <text x="738" y="117" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">✓ Flutter</text>
+    <text x="738" y="130" font-family="'Courier New',monospace" font-size="7" fill="#8892b0">─────────────</text>
+    <text x="738" y="143" font-family="'Courier New',monospace" font-size="7" fill="#0066ff">$ status</text>
+    <text x="738" y="156" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">building: ON</text>
+    <text x="738" y="169" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">shipping: ON</text>
+    <text x="738" y="182" font-family="'Courier New',monospace" font-size="7" fill="#0066ff">$ _</text>
+    <text class="cursor" x="748" y="182" font-family="'Courier New',monospace" font-size="7" fill="#00d4ff">|</text>
   </g>
 
-  <!-- Circuit nodes - left side -->
-  <g opacity="0.15" fill="none" stroke="#00d4ff" stroke-width="1">
-    <circle cx="80" cy="80" r="3"/>
-    <circle cx="140" cy="140" r="3"/>
-    <circle cx="60" cy="200" r="3"/>
-    <circle cx="120" cy="260" r="3"/>
-    <circle cx="200" cy="100" r="2"/>
-    <circle cx="160" cy="60" r="2"/>
-    <line x1="80" y1="80" x2="140" y2="80"/>
-    <line x1="140" y1="80" x2="140" y2="140"/>
-    <line x1="140" y1="140" x2="60" y2="140"/>
-    <line x1="60" y1="140" x2="60" y2="200"/>
-    <line x1="60" y1="200" x2="120" y2="200"/>
-    <line x1="120" y1="200" x2="120" y2="260"/>
-    <line x1="160" y1="60" x2="200" y2="60"/>
-    <line x1="200" y1="60" x2="200" y2="100"/>
-  </g>
+  <!-- ── MOVING SCAN LINE ── -->
+  <rect class="scanAnim" x="0" y="0" width="900" height="1.5" fill="url(#lineH)" opacity="0.25"/>
 
-  <!-- Circuit nodes - right side -->
-  <g opacity="0.15" fill="none" stroke="#00d4ff" stroke-width="1">
-    <circle cx="1120" cy="80" r="3"/>
-    <circle cx="1060" cy="140" r="3"/>
-    <circle cx="1140" cy="200" r="3"/>
-    <circle cx="1080" cy="260" r="3"/>
-    <circle cx="1000" cy="100" r="2"/>
-    <circle cx="1040" cy="60" r="2"/>
-    <line x1="1120" y1="80" x2="1060" y2="80"/>
-    <line x1="1060" y1="80" x2="1060" y2="140"/>
-    <line x1="1060" y1="140" x2="1140" y2="140"/>
-    <line x1="1140" y1="140" x2="1140" y2="200"/>
-    <line x1="1140" y1="200" x2="1080" y2="200"/>
-    <line x1="1080" y1="200" x2="1080" y2="260"/>
-    <line x1="1040" y1="60" x2="1000" y2="60"/>
-    <line x1="1000" y1="60" x2="1000" y2="100"/>
-  </g>
+  <!-- ── TOP and BOTTOM ACCENT LINES ── -->
+  <rect class="pulse" x="0" y="0" width="900" height="1" fill="url(#lineH)"/>
+  <rect class="pulse" x="0" y="219" width="900" height="1" fill="url(#lineH)"/>
 
-  <!-- Scan line overlay -->
-  <rect class="scan-line" x="0" y="0" width="1200" height="2" fill="url(#lineGrad)" opacity="0.3" clip-path="url(#banner-clip)"/>
-
-  <!-- Top accent line -->
-  <rect class="pulse-line" x="0" y="0" width="1200" height="1" fill="url(#accentGrad)"/>
-
-  <!-- Bottom accent line -->
-  <rect class="pulse-line" x="0" y="299" width="1200" height="1" fill="url(#accentGrad)"/>
-
-  <!-- Center accent line -->
-  <rect x="350" y="149.5" width="500" height="1" fill="url(#accentGrad)" opacity="0.2"/>
-
-  <!-- Main name text -->
+  <!-- ── CENTER MAIN TEXT ── -->
+  <!-- Subtle glow layer behind name -->
   <text
-    class="name-text flicker"
-    x="600" y="135"
+    class="name"
+    x="450" y="102"
     text-anchor="middle"
-    font-size="52"
-    fill="#ffffff"
-    filter="url(#textGlow)"
+    fill="#00d4ff"
+    opacity="0.12"
+    font-size="48"
+    filter="url(#strongGlow)"
   >MUHAMMAD USMAN</text>
 
-  <!-- Subtitle -->
+  <!-- Glitch main name -->
   <text
-    class="sub-text"
-    x="600" y="175"
+    class="name glitchText"
+    x="450" y="102"
     text-anchor="middle"
-    font-size="14"
+    fill="#ffffff"
+    filter="url(#cyanGlow)"
+  >MUHAMMAD USMAN</text>
+
+  <!-- Role subtitle -->
+  <text
+    class="role pulse"
+    x="450" y="128"
+    text-anchor="middle"
     fill="#00d4ff"
-    letter-spacing="4"
-    filter="url(#glow)"
-  >AI ENGINEER  ·  FULL STACK DEVELOPER  ·  CS @ AIR UNIVERSITY</text>
+  >AI ENGINEER  ·  FULL STACK  ·  CS @ AIR UNIVERSITY</text>
 
-  <!-- Tags -->
+  <!-- Thin separator lines -->
+  <rect x="220" y="138" width="460" height=".5" fill="url(#lineH2)" opacity="0.6"/>
+
+  <!-- Tags row -->
   <text
-    class="tag-text"
-    x="600" y="215"
+    class="tag"
+    x="450" y="155"
     text-anchor="middle"
-    font-size="11"
     fill="#8892b0"
-    letter-spacing="3"
-  >RAG · LangGraph · LLMs · FastAPI · Flutter · React · .NET · Azure</text>
+  >LangGraph  ·  RAG  ·  FastAPI  ·  Flutter  ·  Azure  ·  .NET 8</text>
 
-  <!-- Small brackets design elements -->
-  <text x="280" y="135" font-size="52" fill="#00d4ff" opacity="0.15" font-family="monospace">[</text>
-  <text x="895" y="135" font-size="52" fill="#00d4ff" opacity="0.15" font-family="monospace">]</text>
+  <!-- Location tag -->
+  <text
+    class="tag"
+    x="450" y="175"
+    text-anchor="middle"
+    fill="#445566"
+  >Islamabad, Pakistan  ·  2022–2026</text>
+
+  <!-- Data dots - decorative animated dots -->
+  <circle class="dataDot" cx="200" cy="40"  r="1.5" fill="#00d4ff" style="animation-delay:.0s"/>
+  <circle class="dataDot" cx="215" cy="40"  r="1.5" fill="#00d4ff" style="animation-delay:.2s"/>
+  <circle class="dataDot" cx="230" cy="40"  r="1.5" fill="#00d4ff" style="animation-delay:.4s"/>
+  <circle class="dataDot" cx="245" cy="40"  r="1.5" fill="#0066ff" style="animation-delay:.6s"/>
+  <circle class="dataDot" cx="260" cy="40"  r="1.5" fill="#0066ff" style="animation-delay:.8s"/>
+  <circle class="dataDot" cx="640" cy="40"  r="1.5" fill="#0066ff" style="animation-delay:.8s"/>
+  <circle class="dataDot" cx="655" cy="40"  r="1.5" fill="#0066ff" style="animation-delay:.6s"/>
+  <circle class="dataDot" cx="670" cy="40"  r="1.5" fill="#00d4ff" style="animation-delay:.4s"/>
+  <circle class="dataDot" cx="685" cy="40"  r="1.5" fill="#00d4ff" style="animation-delay:.2s"/>
+  <circle class="dataDot" cx="700" cy="40"  r="1.5" fill="#00d4ff" style="animation-delay:.0s"/>
+
+  <!-- Bottom data dots -->
+  <circle class="dataDot" cx="200" cy="185" r="1.5" fill="#00d4ff" style="animation-delay:.5s"/>
+  <circle class="dataDot" cx="215" cy="185" r="1.5" fill="#00d4ff" style="animation-delay:.7s"/>
+  <circle class="dataDot" cx="230" cy="185" r="1.5" fill="#0066ff" style="animation-delay:.9s"/>
+  <circle class="dataDot" cx="670" cy="185" r="1.5" fill="#0066ff" style="animation-delay:.9s"/>
+  <circle class="dataDot" cx="685" cy="185" r="1.5" fill="#00d4ff" style="animation-delay:.7s"/>
+  <circle class="dataDot" cx="700" cy="185" r="1.5" fill="#00d4ff" style="animation-delay:.5s"/>
+
+  <!-- Corner brackets -->
+  <path d="M170,10 L160,10 L160,25" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+  <path d="M730,10 L740,10 L740,25" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+  <path d="M170,210 L160,210 L160,195" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+  <path d="M730,210 L740,210 L740,195" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
 </svg>
