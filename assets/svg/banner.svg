@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0f1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="banner-clip">
+      <rect width="1200" height="300" rx="0" ry="0"/>
+    </clipPath>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Inter:wght@300;400;700;900&amp;display=swap');
+      .name-text { font-family: 'JetBrains Mono', monospace; font-weight: 700; letter-spacing: 0.08em; }
+      .sub-text { font-family: 'JetBrains Mono', monospace; font-weight: 400; letter-spacing: 0.15em; }
+      .tag-text { font-family: 'JetBrains Mono', monospace; font-weight: 400; letter-spacing: 0.08em; }
+      .scan-line { animation: scan 4s linear infinite; }
+      @keyframes scan {
+        0% { transform: translateY(-300px); }
+        100% { transform: translateY(600px); }
+      }
+      .pulse-line { animation: pulse 3s ease-in-out infinite; }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.9; }
+      }
+      .flicker { animation: flicker 8s step-start infinite; }
+      @keyframes flicker {
+        0%, 95%, 100% { opacity: 1; }
+        96% { opacity: 0.4; }
+        97% { opacity: 1; }
+        98% { opacity: 0.6; }
+        99% { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)" clip-path="url(#banner-clip)"/>
+
+  <!-- Grid lines - horizontal -->
+  <g opacity="0.06" stroke="#00d4ff" stroke-width="0.5">
+    <line x1="0" y1="30" x2="1200" y2="30"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+  </g>
+
+  <!-- Grid lines - vertical -->
+  <g opacity="0.04" stroke="#00d4ff" stroke-width="0.5">
+    <line x1="60" y1="0" x2="60" y2="300"/>
+    <line x1="120" y1="0" x2="120" y2="300"/>
+    <line x1="180" y1="0" x2="180" y2="300"/>
+    <line x1="240" y1="0" x2="240" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="360" y1="0" x2="360" y2="300"/>
+    <line x1="420" y1="0" x2="420" y2="300"/>
+    <line x1="480" y1="0" x2="480" y2="300"/>
+    <line x1="540" y1="0" x2="540" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="660" y1="0" x2="660" y2="300"/>
+    <line x1="720" y1="0" x2="720" y2="300"/>
+    <line x1="780" y1="0" x2="780" y2="300"/>
+    <line x1="840" y1="0" x2="840" y2="300"/>
+    <line x1="900" y1="0" x2="900" y2="300"/>
+    <line x1="960" y1="0" x2="960" y2="300"/>
+    <line x1="1020" y1="0" x2="1020" y2="300"/>
+    <line x1="1080" y1="0" x2="1080" y2="300"/>
+    <line x1="1140" y1="0" x2="1140" y2="300"/>
+  </g>
+
+  <!-- Circuit nodes - left side -->
+  <g opacity="0.15" fill="none" stroke="#00d4ff" stroke-width="1">
+    <circle cx="80" cy="80" r="3"/>
+    <circle cx="140" cy="140" r="3"/>
+    <circle cx="60" cy="200" r="3"/>
+    <circle cx="120" cy="260" r="3"/>
+    <circle cx="200" cy="100" r="2"/>
+    <circle cx="160" cy="60" r="2"/>
+    <line x1="80" y1="80" x2="140" y2="80"/>
+    <line x1="140" y1="80" x2="140" y2="140"/>
+    <line x1="140" y1="140" x2="60" y2="140"/>
+    <line x1="60" y1="140" x2="60" y2="200"/>
+    <line x1="60" y1="200" x2="120" y2="200"/>
+    <line x1="120" y1="200" x2="120" y2="260"/>
+    <line x1="160" y1="60" x2="200" y2="60"/>
+    <line x1="200" y1="60" x2="200" y2="100"/>
+  </g>
+
+  <!-- Circuit nodes - right side -->
+  <g opacity="0.15" fill="none" stroke="#00d4ff" stroke-width="1">
+    <circle cx="1120" cy="80" r="3"/>
+    <circle cx="1060" cy="140" r="3"/>
+    <circle cx="1140" cy="200" r="3"/>
+    <circle cx="1080" cy="260" r="3"/>
+    <circle cx="1000" cy="100" r="2"/>
+    <circle cx="1040" cy="60" r="2"/>
+    <line x1="1120" y1="80" x2="1060" y2="80"/>
+    <line x1="1060" y1="80" x2="1060" y2="140"/>
+    <line x1="1060" y1="140" x2="1140" y2="140"/>
+    <line x1="1140" y1="140" x2="1140" y2="200"/>
+    <line x1="1140" y1="200" x2="1080" y2="200"/>
+    <line x1="1080" y1="200" x2="1080" y2="260"/>
+    <line x1="1040" y1="60" x2="1000" y2="60"/>
+    <line x1="1000" y1="60" x2="1000" y2="100"/>
+  </g>
+
+  <!-- Scan line overlay -->
+  <rect class="scan-line" x="0" y="0" width="1200" height="2" fill="url(#lineGrad)" opacity="0.3" clip-path="url(#banner-clip)"/>
+
+  <!-- Top accent line -->
+  <rect class="pulse-line" x="0" y="0" width="1200" height="1" fill="url(#accentGrad)"/>
+
+  <!-- Bottom accent line -->
+  <rect class="pulse-line" x="0" y="299" width="1200" height="1" fill="url(#accentGrad)"/>
+
+  <!-- Center accent line -->
+  <rect x="350" y="149.5" width="500" height="1" fill="url(#accentGrad)" opacity="0.2"/>
+
+  <!-- Main name text -->
+  <text
+    class="name-text flicker"
+    x="600" y="135"
+    text-anchor="middle"
+    font-size="52"
+    fill="#ffffff"
+    filter="url(#textGlow)"
+  >MUHAMMAD USMAN</text>
+
+  <!-- Subtitle -->
+  <text
+    class="sub-text"
+    x="600" y="175"
+    text-anchor="middle"
+    font-size="14"
+    fill="#00d4ff"
+    letter-spacing="4"
+    filter="url(#glow)"
+  >AI ENGINEER  ·  FULL STACK DEVELOPER  ·  CS @ AIR UNIVERSITY</text>
+
+  <!-- Tags -->
+  <text
+    class="tag-text"
+    x="600" y="215"
+    text-anchor="middle"
+    font-size="11"
+    fill="#8892b0"
+    letter-spacing="3"
+  >RAG · LangGraph · LLMs · FastAPI · Flutter · React · .NET · Azure</text>
+
+  <!-- Small brackets design elements -->
+  <text x="280" y="135" font-size="52" fill="#00d4ff" opacity="0.15" font-family="monospace">[</text>
+  <text x="895" y="135" font-size="52" fill="#00d4ff" opacity="0.15" font-family="monospace">]</text>
+</svg>

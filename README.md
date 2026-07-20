@@ -1,43 +1,175 @@
+<!-- ============================================================ -->
+<!--                  MUHAMMAD USMAN — GITHUB PROFILE             -->
+<!--   AI Engineer · Full Stack Developer · CS @ Air University   -->
+<!-- ============================================================ -->
+
 <div align="center">
 
-<!-- Fixed Header - stable rendering, no crop -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f35,100:3B6FFF&height=220&section=header&text=Muhammad%20Usman&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=45&desc=Full%20Stack%20AI%20Engineer%20%7C%20SaaS%20Builder%20%7C%20RAG%20%26%20LLM%20Systems&descAlignY=65&descSize=16&descColor=8892b0" />
+<!-- ░░░ HERO BANNER ░░░ -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/svg/banner.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/svg/banner.svg">
+  <img src="./assets/svg/banner.svg" alt="Muhammad Usman — AI Engineer" width="100%" />
+</picture>
 
 <br/>
 
-<!-- Typing SVG -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=3B6FFF&center=true&vCenter=true&multiline=false&width=500&lines=Building+AI+products+from+Islamabad+%F0%9F%87%B5%F0%9F%87%B0;BSCS+%40+Air+University+%7C+2026;RAG+%7C+LangGraph+%7C+LLMs+%7C+SaaS;Ex+AI+Intern+%40+Zamus+Pvt+Ltd;Shipping+products+that+matter+%F0%9F%9A%80" alt="Typing SVG" />
+<!-- ░░░ ANIMATED TYPING ░░░ -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=900&color=00D4FF&center=true&vCenter=true&multiline=false&width=600&height=40&lines=Building+AI+systems+from+Islamabad%2C+Pakistan;BSCS+%40+Air+University+%7C+Class+of+2026;RAG+%E2%80%94+LangGraph+%E2%80%94+LLMs+%E2%80%94+Multi-Agent+Systems;FastAPI+%E2%80%94+Flutter+%E2%80%94+React+%E2%80%94+.NET+8;Shipping+products+that+matter." alt="Typing Animation" />
+
+<br/>
+
+<!-- ░░░ SOCIAL BADGES ░░░ -->
+<a href="https://linkedin.com/in/usman11267">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"/>
+</a>
+&nbsp;
+<a href="mailto:waseerusman2@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/>
+</a>
+&nbsp;
+<a href="https://openclip.lovable.app">
+  <img src="https://img.shields.io/badge/OpenClip-00D4FF?style=flat-square&logo=vercel&logoColor=white&labelColor=0d1117" alt="OpenClip"/>
+</a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=usman11267&color=00d4ff&style=flat-square&label=Profile+Views&labelColor=0d1117" alt="Profile Views"/>
 
 </div>
 
+<br/>
+
 ---
 
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░               ABOUT               ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+
+## `$ whoami`
+
 ```typescript
-const usman = {
+const usman: AIEngineer = {
+  name:        "Muhammad Usman",
+  alias:       "usman11267",
   location:    "Islamabad, Pakistan 🇵🇰",
   university:  "Air University — BSCS (2022–2026)",
+  role:        "AI Engineer · Full Stack Developer",
   experience:  "AI Engineer Intern @ Zamus Pvt Ltd (May–Aug 2025)",
-  currently:   "Building OpenClip 🎬 — AI SaaS for short-form video",
-  focus:       ["RAG Systems", "LLM Fine-tuning", "SaaS", "Full-Stack"],
-  stack:       ["MERN", "Flutter", "FastAPI", "LangGraph", "Supabase"],
-  askMeAbout:  ["LLMs", "n8n Automation", "Flutter", "RAG Pipelines"],
-  funFact:     "I walk 5k–10k steps daily while debugging in my head 🚶‍♂️",
+
+  currentFocus: [
+    "HealthVerse — AI-powered eye care platform (FYP 2026)",
+    "OpenClip    — AI SaaS for short-form video generation",
+    "Multi-Agent AI Systems with LangGraph",
+    "RAG pipelines with Qdrant & Gemini",
+  ],
+
+  stack: {
+    ai:       ["LangGraph", "LangChain", "RAG", "LoRA", "Unsloth", "Qdrant"],
+    backend:  ["FastAPI", "Node.js", "ASP.NET Core (.NET 8)"],
+    frontend: ["React", "Next.js", "Flutter", "TanStack Start"],
+    infra:    ["Azure", "Docker", "Supabase", "Firebase", "MongoDB"],
+    tools:    ["n8n", "Postman", "Git", "Render"],
+  },
+
+  askMeAbout: ["LLMs", "RAG Systems", "AI Agents", "Flutter", "n8n"],
+  funFact:    "I debug best during 5k–10k step walks 🚶‍♂️",
 };
 ```
 
+<br/>
+
 ---
 
-## 💼 Experience
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░           EXPERIENCE              ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+
+## Experience
 
 <table width="100%">
 <tr>
-<td>
+<td valign="top" width="6">
+<div align="center">
+<img src="https://img.shields.io/badge/-2025-00d4ff?style=flat-square&labelColor=0d1117&color=00d4ff" alt="2025"/>
+</div>
+</td>
+<td valign="top">
 
-### 🏢 AI Engineer Intern — Zamus Pvt Ltd, Islamabad
-**May 2025 – Aug 2025**
+**AI Engineer Intern — Zamus Pvt Ltd** &nbsp; `May 2025 – Aug 2025` &nbsp; · &nbsp; Islamabad, PK
 
-- Fine-tuned and deployed LLMs & Deep Learning models, improving prediction accuracy through data preprocessing and feature engineering
-- Collaborated with cross-functional teams to optimize ML models for performance and scalability using Python, TensorFlow & PyTorch
+- Fine-tuned and deployed production LLMs & deep learning models, optimizing prediction accuracy through advanced data preprocessing and feature engineering pipelines
+- Collaborated with cross-functional teams to architect scalable ML systems using Python, TensorFlow & PyTorch
+- Reduced model inference latency by redesigning data ingestion pipelines for batch processing at scale
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+<div align="center">
+<img src="https://img.shields.io/badge/-2022-8892b0?style=flat-square&labelColor=0d1117&color=8892b0" alt="2022"/>
+</div>
+</td>
+<td valign="top">
+
+**BSCS Student — Air University** &nbsp; `2022 – 2026` &nbsp; · &nbsp; Islamabad, PK
+
+- Computer Science undergraduate with focus on AI, machine learning, and full-stack development
+- Completed Flutter Mobile Development & Full-Stack Web Development certifications (AUCIS)
+- FYP: HealthVerse — AI Eye Care Platform, presented at AU FYP Open House 2026
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░         FEATURED PROJECTS         ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+
+## Featured Projects
+
+### HealthVerse &nbsp; `FYP 2026` &nbsp; — *AI-Powered Eye Care Platform*
+
+> End-to-end AI healthcare system — mobile app, doctor dashboard, intelligent AI agents, and a medical RAG pipeline. Presented at **AU FYP Open House 2026**.
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Architecture**
+
+| Layer | Technology |
+|:------|:-----------|
+| Mobile App | Flutter |
+| Web Dashboard | React · ASP.NET Core |
+| Backend APIs | FastAPI · .NET 8 |
+| AI Vision | CNN · EfficientNet-B7 · ResNet-50 |
+| LLM Stack | LoRA + Unsloth · LangGraph Agents |
+| Vector Store | Qdrant · Gemini API |
+| Infrastructure | Azure · MongoDB · n8n |
+
+</td>
+<td width="50%" valign="top">
+
+**Key Features**
+
+- **Medical RAG Pipeline** — domain-specific LLM grounded on ophthalmic literature
+- **Multi-Agent System** — LangGraph orchestrated diagnosis & triage agents
+- **AI Vision Models** — retinal disease classification via fine-tuned CNNs
+- **Telemedicine Integration** — real-time doctor–patient consultation flow
+- **Automation** — n8n workflows for appointment reminders & reports
+
+<br/>
+
+![Python](https://img.shields.io/badge/Python-1a1f35?style=flat-square&logo=python&logoColor=00d4ff)
+![Flutter](https://img.shields.io/badge/Flutter-1a1f35?style=flat-square&logo=flutter&logoColor=00d4ff)
+![FastAPI](https://img.shields.io/badge/FastAPI-1a1f35?style=flat-square&logo=fastapi&logoColor=00d4ff)
+![Azure](https://img.shields.io/badge/Azure-1a1f35?style=flat-square&logo=microsoftazure&logoColor=00d4ff)
+![LangGraph](https://img.shields.io/badge/LangGraph-1a1f35?style=flat-square&logo=langchain&logoColor=00d4ff)
+
+[![Certificate](https://img.shields.io/badge/AU_FYP_Open_House_2026-Certificate_of_Participation-00d4ff?style=flat-square&labelColor=1a1f35)](https://github.com/usman11267)
 
 </td>
 </tr>
@@ -45,255 +177,364 @@ const usman = {
 
 ---
 
+### OpenClip &nbsp; `In Development` &nbsp; — *AI Short-Form Video SaaS*
+
+> AI-powered SaaS that auto-generates TikTok / Reels / Shorts clips from long-form videos. [openclip.lovable.app](https://openclip.lovable.app)
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Progress**
+
+- [x] Google OAuth + Supabase auth flow
+- [x] Projects & credits database schema (RLS enabled)
+- [x] Animated AI processing simulation UI
+- [ ] Real AI clipping pipeline with scene detection
+- [ ] Stripe subscription & credit system
+- [ ] Export to TikTok, Reels, Shorts formats
+
+</td>
+<td width="50%" valign="top">
+
+**Stack**
+
+![TanStack](https://img.shields.io/badge/TanStack_Start-1a1f35?style=flat-square&logo=react&logoColor=00d4ff)
+![Supabase](https://img.shields.io/badge/Supabase-1a1f35?style=flat-square&logo=supabase&logoColor=00d4ff)
+![Framer](https://img.shields.io/badge/Framer_Motion-1a1f35?style=flat-square&logo=framer&logoColor=00d4ff)
+![TypeScript](https://img.shields.io/badge/TypeScript-1a1f35?style=flat-square&logo=typescript&logoColor=00d4ff)
+![Vercel](https://img.shields.io/badge/Vercel-1a1f35?style=flat-square&logo=vercel&logoColor=00d4ff)
+
+&nbsp;
+
+**Status:** &nbsp; `Active Development`
+
+</td>
+</tr>
+</table>
+
+---
+
+### NutriCare &nbsp; — *AI-Powered Diet & Nutrition Platform*
+
+> Full-stack AI nutrition platform with BMI tracking, diet logging, appointment booking, and real-time patient-dietitian chat powered by Google Gemini.
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Features**
+
+- Personalized nutrition guidance via **Google Gemini AI**
+- Real-time patient–dietitian chat via **Firebase Realtime DB**
+- BMI tracking & meal logging with data visualizations
+- Appointment booking system with calendar integration
+- Recharts-powered analytics dashboard for dietitians
+
+</td>
+<td width="50%" valign="top">
+
+**Stack**
+
+![React](https://img.shields.io/badge/React-1a1f35?style=flat-square&logo=react&logoColor=00d4ff)
+![Node.js](https://img.shields.io/badge/Node.js-1a1f35?style=flat-square&logo=nodedotjs&logoColor=00d4ff)
+![Firebase](https://img.shields.io/badge/Firebase-1a1f35?style=flat-square&logo=firebase&logoColor=00d4ff)
+![Supabase](https://img.shields.io/badge/Supabase-1a1f35?style=flat-square&logo=supabase&logoColor=00d4ff)
+![Gemini](https://img.shields.io/badge/Gemini_AI-1a1f35?style=flat-square&logo=google&logoColor=00d4ff)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<details>
+<summary><b>Other Projects</b></summary>
+<br/>
+
+| Project | Description | Stack |
+|:--------|:------------|:------|
+| **WhatsApp Expense Tracker** | Send a WhatsApp message → AI extracts amount + category → logs to Google Sheets. Fully serverless. | n8n · Groq LLM · Twilio · Google Sheets |
+| **Telegram AI Health Coach** | Multi-user Telegram bot — tracks meals, provides AI nutrition advice, logs health data per user. | n8n · Supabase · Groq · LogMeal API |
+| **Salon Management System** | Full-stack platform — appointment scheduling, customer management, admin dashboard. | React · Node.js · Express · MongoDB |
+| **Real-Time Heart Rate Monitor** | Detects heart rate from webcam using rPPG via facial landmark tracking. No hardware needed. | PyQt5 · OpenCV · Mediapipe |
+
+</details>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░            TECH STACK             ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+
+## Tech Stack
+
 <div align="center">
 
-## 🚀 Currently Shipping
+### Languages
+
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=00d4ff&labelColor=1a1f35)
+![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=00d4ff&labelColor=1a1f35)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=00d4ff&labelColor=1a1f35)
+![Dart](https://img.shields.io/badge/Dart-0d1117?style=for-the-badge&logo=dart&logoColor=00d4ff&labelColor=1a1f35)
+![C++](https://img.shields.io/badge/C++-0d1117?style=for-the-badge&logo=cplusplus&logoColor=00d4ff&labelColor=1a1f35)
+![C#](https://img.shields.io/badge/C%23-0d1117?style=for-the-badge&logo=csharp&logoColor=00d4ff&labelColor=1a1f35)
+
+### AI & ML Stack
+
+![LangGraph](https://img.shields.io/badge/LangGraph-0d1117?style=for-the-badge&logo=langchain&logoColor=00d4ff&labelColor=1a1f35)
+![LangChain](https://img.shields.io/badge/LangChain-0d1117?style=for-the-badge&logo=langchain&logoColor=00d4ff&labelColor=1a1f35)
+![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=for-the-badge&logo=pytorch&logoColor=00d4ff&labelColor=1a1f35)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-0d1117?style=for-the-badge&logo=tensorflow&logoColor=00d4ff&labelColor=1a1f35)
+![Qdrant](https://img.shields.io/badge/Qdrant-0d1117?style=for-the-badge&logo=qdrant&logoColor=00d4ff&labelColor=1a1f35)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-0d1117?style=for-the-badge&logo=huggingface&logoColor=00d4ff&labelColor=1a1f35)
+![OpenCV](https://img.shields.io/badge/OpenCV-0d1117?style=for-the-badge&logo=opencv&logoColor=00d4ff&labelColor=1a1f35)
+
+### Frontend & Mobile
+
+![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=00d4ff&labelColor=1a1f35)
+![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=for-the-badge&logo=nextdotjs&logoColor=00d4ff&labelColor=1a1f35)
+![Flutter](https://img.shields.io/badge/Flutter-0d1117?style=for-the-badge&logo=flutter&logoColor=00d4ff&labelColor=1a1f35)
+![TanStack](https://img.shields.io/badge/TanStack-0d1117?style=for-the-badge&logo=react&logoColor=00d4ff&labelColor=1a1f35)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-0d1117?style=for-the-badge&logo=tailwindcss&logoColor=00d4ff&labelColor=1a1f35)
+![Framer](https://img.shields.io/badge/Framer_Motion-0d1117?style=for-the-badge&logo=framer&logoColor=00d4ff&labelColor=1a1f35)
+
+### Backend & APIs
+
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=00d4ff&labelColor=1a1f35)
+![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=00d4ff&labelColor=1a1f35)
+![.NET](https://img.shields.io/badge/.NET_8-0d1117?style=for-the-badge&logo=dotnet&logoColor=00d4ff&labelColor=1a1f35)
+![Express](https://img.shields.io/badge/Express-0d1117?style=for-the-badge&logo=express&logoColor=00d4ff&labelColor=1a1f35)
+
+### Cloud & Databases
+
+![Azure](https://img.shields.io/badge/Azure-0d1117?style=for-the-badge&logo=microsoftazure&logoColor=00d4ff&labelColor=1a1f35)
+![Supabase](https://img.shields.io/badge/Supabase-0d1117?style=for-the-badge&logo=supabase&logoColor=00d4ff&labelColor=1a1f35)
+![MongoDB](https://img.shields.io/badge/MongoDB-0d1117?style=for-the-badge&logo=mongodb&logoColor=00d4ff&labelColor=1a1f35)
+![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=for-the-badge&logo=firebase&logoColor=00d4ff&labelColor=1a1f35)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=00d4ff&labelColor=1a1f35)
+
+### Tools & Automation
+
+![n8n](https://img.shields.io/badge/n8n-0d1117?style=for-the-badge&logo=n8n&logoColor=00d4ff&labelColor=1a1f35)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=00d4ff&labelColor=1a1f35)
+![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=00d4ff&labelColor=1a1f35)
+![Postman](https://img.shields.io/badge/Postman-0d1117?style=for-the-badge&logo=postman&logoColor=00d4ff&labelColor=1a1f35)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0d1117?style=for-the-badge&logo=githubactions&logoColor=00d4ff&labelColor=1a1f35)
 
 </div>
 
-<table align="center" width="95%">
-<tr>
-<td width="60%" valign="top">
+<br/>
 
-### 🎬 OpenClip — *[openclip.lovable.app](https://openclip.lovable.app)*
-> AI-powered SaaS that auto-generates short-form clips (TikTok / Reels / Shorts) from long-form videos.
+---
 
-**Stack:** TanStack Start · Supabase · Google OAuth · Framer Motion
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░          GITHUB STATS             ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
-**Progress:**
-- [x] Google OAuth + Supabase auth flow
-- [x] Projects & credits DB schema (RLS enabled)
-- [x] Animated AI processing simulation
-- [ ] Real AI clipping pipeline (in progress)
-- [ ] Stripe integration
+## GitHub Stats
 
-</td>
-<td width="40%" valign="top" align="center">
+<div align="center">
 
-<img src="https://img.shields.io/badge/Status-In%20Dev-3B6FFF?style=for-the-badge&logo=rocket&logoColor=white" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=usman11267&show_icons=true&theme=transparent&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&ring_color=00d4ff" alt="GitHub Stats" />
+&nbsp;
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=usman11267&layout=compact&theme=transparent&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
 
 <br/><br/>
 
-![TanStack](https://img.shields.io/badge/TanStack-FF4154?style=flat-square&logo=react&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=usman11267&theme=transparent&hide_border=true&background=0d1117&ring=00d4ff&fire=00d4ff&currStreakLabel=00d4ff&sideLabels=00d4ff&currStreakNum=ffffff&sideNums=ffffff&dates=8892b0" alt="GitHub Streak" />
 
-</td>
-</tr>
-</table>
+<br/><br/>
+
+<!-- GitHub Trophies -->
+<img src="https://github-profile-trophy.vercel.app/?username=usman11267&theme=onestar&no-frame=true&no-bg=true&margin-w=6&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A,B" alt="GitHub Trophies" />
+
+<br/><br/>
+
+<!-- Activity Graph -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=usman11267&theme=react-dark&hide_border=true&bg_color=0d1117&color=00d4ff&line=00d4ff&point=ffffff&area=true&area_color=00d4ff" alt="Activity Graph" width="95%" />
+
+</div>
+
+<br/>
 
 ---
 
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░      CONTRIBUTION SNAKE           ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+
+## Contribution Graph
+
 <div align="center">
 
-## 🏆 Projects
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/usman11267/usman11267/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/usman11267/usman11267/output/github-snake.svg" />
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/usman11267/usman11267/output/github-snake.svg" width="95%" />
+</picture>
 
 </div>
 
-<details open>
-<summary><b>🏥 HealthVerse — AI Eye Care Platform (FYP 2026)</b></summary>
 <br/>
-
-> End-to-end AI healthcare system (mobile, web, APIs & agents) enabling real-time workflows for eye care with telemedicine integration. Presented at AU FYP Open House 2026.
-
-| Layer | Tech |
-|-------|------|
-| **Mobile** | Flutter |
-| **Backend** | ASP.NET Core (.NET 8) · FastAPI |
-| **AI Models** | CNN · EfficientNet-B7 · ResNet-50 |
-| **LLM Stack** | LoRA + Unsloth · LangGraph RAG |
-| **Vector DB** | Qdrant · Gemini API |
-| **Infra** | Azure · MongoDB · n8n |
-
-[![Certificate](https://img.shields.io/badge/🎖️_AU_FYP_Open_House_2026-Certificate_of_Participation-gold?style=flat-square)](https://github.com/usman11267)
-
-</details>
-
-<details>
-<summary><b>🥗 NutriCare — AI-Powered Diet & Nutrition Platform</b></summary>
-<br/>
-
-> Full-stack AI nutrition platform with BMI tracking, diet logging, appointment booking, and real-time patient-dietitian chat.
-
-- Integrated **Google Gemini AI** for personalized nutrition guidance
-- Real-time patient-dietitian interaction via **Firebase Realtime DB**
-- Data visualizations with **Recharts** for a data-driven UX
-
-**Stack:** React · Node.js · Express.js · Supabase · Firebase · Google Gemini AI · Tailwind CSS · Recharts
-
-</details>
-
-<details>
-<summary><b>💈 Salon Management System</b></summary>
-<br/>
-
-> Full-stack salon operations platform — appointment scheduling, customer management, and service handling.
-
-- Responsive UI with integrated backend APIs for bookings and business workflows
-- Admin dashboard for streamlined salon operations
-
-**Stack:** React · Node.js · Express · MongoDB
-
-</details>
-
-<details>
-<summary><b>🤖 WhatsApp Expense Tracker — n8n Automation</b></summary>
-<br/>
-
-> Send a WhatsApp message → AI extracts amount + category → logs to Google Sheets. Fully serverless.
-
-**Stack:** n8n · Groq LLM · Twilio · Google Sheets · Render
-
-🔗 Deployed at `n8nusman.onrender.com`
-
-</details>
-
-<details>
-<summary><b>🏃 Telegram AI Health Coach Bot</b></summary>
-<br/>
-
-> Multi-user Telegram bot that tracks meals, provides AI-powered nutrition advice, and logs health data per user.
-
-**Stack:** n8n · Supabase (PostgreSQL) · Groq · LogMeal API
-
-</details>
-
-<details>
-<summary><b>💓 Real-Time Heart Rate Monitor</b></summary>
-<br/>
-
-> Detects heart rate from webcam using rPPG via facial landmark tracking — no hardware needed.
-
-**Stack:** PyQt5 · OpenCV · Mediapipe
-
-</details>
 
 ---
 
-<div align="center">
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░          CERTIFICATIONS           ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
-## 🛠️ Tech Stack
-
-</div>
-
-<div align="center">
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![TanStack](https://img.shields.io/badge/TanStack-FF4154?style=for-the-badge&logo=react&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-
-**Backend & AI**
-
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![.NET](https://img.shields.io/badge/.NET_8-5C2D91?style=for-the-badge&logo=dotnet&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-**Databases & Cloud**
-
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Qdrant](https://img.shields.io/badge/Qdrant-FF4454?style=for-the-badge&logo=qdrant&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white)
-
-**Tools & Automation**
-
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-</div>
-
----
-
-<div align="center">
-
-## 🎓 Certifications
-
-</div>
+## Certifications
 
 <table align="center" width="90%">
 <tr>
 <td align="center" width="50%">
 
-**📱 Flutter Mobile App Development**
-<br/>*AUCIS — Air University*
-
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-
-MVVM · Google Analytics · Google Play
+**Flutter Mobile App Development**
+<br/>*AUCIS — Air University, Islamabad*
+<br/><br/>
+![Flutter](https://img.shields.io/badge/Flutter-1a1f35?style=flat-square&logo=flutter&logoColor=00d4ff)
+![Firebase](https://img.shields.io/badge/Firebase-1a1f35?style=flat-square&logo=firebase&logoColor=00d4ff)
+![Dart](https://img.shields.io/badge/Dart-1a1f35?style=flat-square&logo=dart&logoColor=00d4ff)
+<br/>
+`MVVM · Google Analytics · Google Play Console`
 
 </td>
 <td align="center" width="50%">
 
-**🌐 Full Stack Web Development**
-<br/>*AUCIS — Air University*
+**Full Stack Web Development**
+<br/>*AUCIS — Air University, Islamabad*
+<br/><br/>
+![React](https://img.shields.io/badge/React-1a1f35?style=flat-square&logo=react&logoColor=00d4ff)
+![Next.js](https://img.shields.io/badge/Next.js-1a1f35?style=flat-square&logo=nextdotjs&logoColor=00d4ff)
+![Node.js](https://img.shields.io/badge/Node.js-1a1f35?style=flat-square&logo=nodedotjs&logoColor=00d4ff)
+<br/>
+`Tailwind · Bootstrap · MongoDB · Supabase`
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=nodedotjs&logoColor=white)
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
 
-Tailwind · Bootstrap · MongoDB · Supabase
+**AU FYP Open House 2026** — Certificate of Participation
+<br/>*HealthVerse — AI Eye Care Platform*
+<br/>
+![Certificate](https://img.shields.io/badge/Air_University-FYP_Open_House_2026-00d4ff?style=flat-square&labelColor=1a1f35)
 
 </td>
 </tr>
 </table>
 
----
-
-<div align="center">
-
-## 📊 GitHub Stats
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=usman11267&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3B6FFF&icon_color=3B6FFF" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=usman11267&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3B6FFF" />
-
 <br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=usman11267&theme=tokyonight&hide_border=true&background=0d1117&ring=3B6FFF&fire=3B6FFF&currStreakLabel=3B6FFF" />
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=usman11267&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=3B6FFF&line=3B6FFF&point=ffffff" />
-
-</div>
 
 ---
 
-<div align="center">
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░         CURRENT FOCUS             ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
 
-## 🌐 Connect
+## Current Focus & Goals
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/usman11267)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:waseerusman2@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/usman11267)
-[![OpenClip](https://img.shields.io/badge/OpenClip-3B6FFF?style=for-the-badge&logo=vercel&logoColor=white)](https://openclip.lovable.app)
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Building Now**
+
+- `HealthVerse` — Completing FYP AI eye care platform
+- `OpenClip` — Shipping AI clipping pipeline + Stripe
+- Multi-agent LangGraph system for medical triage
+
+</td>
+<td width="50%" valign="top">
+
+**Learning Now**
+
+- Advanced LLM fine-tuning (LoRA, QLoRA, RLHF)
+- Cloud architecture on Azure (AKS, Functions, Cosmos DB)
+- LangGraph multi-agent orchestration patterns
+- AI product design & system design at scale
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**2026 Goals**
+
+- Ship HealthVerse to production with real patients
+- Launch OpenClip with 100+ paying users
+- Contribute to open-source AI tooling
+- Land a full-time AI Engineer role post-graduation
+
+</td>
+<td width="50%" valign="top">
+
+**Open Source**
+
+- Contributing to AI/ML ecosystem
+- Building reusable LangGraph agent templates
+- RAG pipeline utility libraries
+- Documentation & tutorials for LLM applications
+
+</td>
+</tr>
+</table>
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=usman11267&color=3B6FFF&style=flat-square&label=Profile+Views)
+---
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░░             CONTACT               ░░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+
+## Contact
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+
+**LinkedIn**
+<br/>
+[![LinkedIn](https://img.shields.io/badge/usman11267-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117)](https://linkedin.com/in/usman11267)
+
+</td>
+<td align="center">
+
+**Email**
+<br/>
+[![Gmail](https://img.shields.io/badge/waseerusman2@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:waseerusman2@gmail.com)
+
+</td>
+<td align="center">
+
+**Portfolio**
+<br/>
+[![OpenClip](https://img.shields.io/badge/openclip.lovable.app-00D4FF?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1117)](https://openclip.lovable.app)
+
+</td>
+<td align="center">
+
+**GitHub**
+<br/>
+[![GitHub](https://img.shields.io/badge/usman11267-ffffff?style=for-the-badge&logo=github&logoColor=black&labelColor=0d1117)](https://github.com/usman11267)
+
+</td>
+</tr>
+</table>
 
 <br/>
 
 > *"Build things that matter. Ship before perfect. Learn by doing."*
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3B6FFF,100:0d1117&height=80&section=footer" />
+<br/>
+
+<!-- Footer wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0a0f1e,100:00d4ff&height=80&section=footer&reversal=false" width="100%" alt="Footer" />
 
 </div>

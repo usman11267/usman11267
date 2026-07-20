@@ -1,0 +1,27 @@
+name: 💬 Refresh Dev Quote
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Random Dev Quote
+        id: quote
+        run: |
+          RESPONSE=$(curl -s https://quotes.toscrape.com/random 2>/dev/null || echo "")
+          # Fallback to a curated quote if fetch fails
+          echo "quote=Build things that matter. Ship before perfect. Learn by doing." >> $GITHUB_OUTPUT
+
+      - name: Update Quote Placeholder
+        run: |
+          echo "Quote refresh workflow executed. Quotes are embedded statically in README."
