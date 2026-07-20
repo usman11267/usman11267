@@ -1,10 +1,12 @@
 <div align="center">
 
-<!-- Dynamic Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0a0f,50:3B6FFF,100:0a0a0f&height=200&section=header&text=Muhammad%20Usman&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Engineer%20%7C%20Full-Stack%20Dev%20%7C%20SaaS%20Builder&descAlignY=58&descSize=18&descColor=8892b0" />
+<!-- Fixed Header - stable rendering, no crop -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f35,100:3B6FFF&height=220&section=header&text=Muhammad%20Usman&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=45&desc=Full%20Stack%20AI%20Engineer%20%7C%20SaaS%20Builder%20%7C%20RAG%20%26%20LLM%20Systems&descAlignY=65&descSize=16&descColor=8892b0" />
+
+<br/>
 
 <!-- Typing SVG -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=1000&color=3B6FFF&center=true&vCenter=true&width=600&lines=Building+AI+products+from+Islamabad+%F0%9F%87%B5%F0%9F%87%B0;BSCS+%40+Air+University+%7C+Graduating+2026;RAG+%7C+LangGraph+%7C+LLMs+%7C+SaaS;Turning+ideas+into+shipped+products+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=3B6FFF&center=true&vCenter=true&multiline=false&width=500&lines=Building+AI+products+from+Islamabad+%F0%9F%87%B5%F0%9F%87%B0;BSCS+%40+Air+University+%7C+2026;RAG+%7C+LangGraph+%7C+LLMs+%7C+SaaS;Ex+AI+Intern+%40+Zamus+Pvt+Ltd;Shipping+products+that+matter+%F0%9F%9A%80" alt="Typing SVG" />
 
 </div>
 
@@ -12,15 +14,34 @@
 
 ```typescript
 const usman = {
-  location:   "Islamabad, Pakistan 🇵🇰",
-  university: "Air University — BSCS (2022–2026)",
-  currently:  "Building OpenClip 🎬 — AI SaaS for short-form video",
-  focus:      ["AI/ML", "RAG Systems", "SaaS", "Full-Stack"],
-  learning:   ["TanStack Start", "LangGraph", "Supabase Edge Functions"],
-  askMeAbout: ["LLMs", "Flutter", "React", "n8n Automation"],
-  funFact:    "I walk 5k–10k steps daily while debugging in my head 🚶‍♂️",
+  location:    "Islamabad, Pakistan 🇵🇰",
+  university:  "Air University — BSCS (2022–2026)",
+  experience:  "AI Engineer Intern @ Zamus Pvt Ltd (May–Aug 2025)",
+  currently:   "Building OpenClip 🎬 — AI SaaS for short-form video",
+  focus:       ["RAG Systems", "LLM Fine-tuning", "SaaS", "Full-Stack"],
+  stack:       ["MERN", "Flutter", "FastAPI", "LangGraph", "Supabase"],
+  askMeAbout:  ["LLMs", "n8n Automation", "Flutter", "RAG Pipelines"],
+  funFact:     "I walk 5k–10k steps daily while debugging in my head 🚶‍♂️",
 };
 ```
+
+---
+
+## 💼 Experience
+
+<table width="100%">
+<tr>
+<td>
+
+### 🏢 AI Engineer Intern — Zamus Pvt Ltd, Islamabad
+**May 2025 – Aug 2025**
+
+- Fine-tuned and deployed LLMs & Deep Learning models, improving prediction accuracy through data preprocessing and feature engineering
+- Collaborated with cross-functional teams to optimize ML models for performance and scalability using Python, TensorFlow & PyTorch
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -65,7 +86,7 @@ const usman = {
 
 <div align="center">
 
-## 🏆 Flagship Projects
+## 🏆 Projects
 
 </div>
 
@@ -73,17 +94,45 @@ const usman = {
 <summary><b>🏥 HealthVerse — AI Eye Care Platform (FYP 2026)</b></summary>
 <br/>
 
-> An AI-powered eye disease detection & clinical assistant presented at AU FYP Open House 2026.
+> End-to-end AI healthcare system (mobile, web, APIs & agents) enabling real-time workflows for eye care with telemedicine integration. Presented at AU FYP Open House 2026.
 
 | Layer | Tech |
 |-------|------|
 | **Mobile** | Flutter |
-| **Backend** | ASP.NET Core · FastAPI |
-| **AI** | EfficientNet-B7 · ResNet-50 · LangGraph · RAG |
-| **LLMs** | LoRA/QLoRA fine-tuned medical LLMs |
-| **Infra** | Azure · MongoDB · Qdrant |
+| **Backend** | ASP.NET Core (.NET 8) · FastAPI |
+| **AI Models** | CNN · EfficientNet-B7 · ResNet-50 |
+| **LLM Stack** | LoRA + Unsloth · LangGraph RAG |
+| **Vector DB** | Qdrant · Gemini API |
+| **Infra** | Azure · MongoDB · n8n |
 
-[![Certificate](https://img.shields.io/badge/🎖️%20AU%20FYP%20Open%20House%202026-Certificate%20of%20Participation-gold?style=flat-square)](https://github.com/usman11267)
+[![Certificate](https://img.shields.io/badge/🎖️_AU_FYP_Open_House_2026-Certificate_of_Participation-gold?style=flat-square)](https://github.com/usman11267)
+
+</details>
+
+<details>
+<summary><b>🥗 NutriCare — AI-Powered Diet & Nutrition Platform</b></summary>
+<br/>
+
+> Full-stack AI nutrition platform with BMI tracking, diet logging, appointment booking, and real-time patient-dietitian chat.
+
+- Integrated **Google Gemini AI** for personalized nutrition guidance
+- Real-time patient-dietitian interaction via **Firebase Realtime DB**
+- Data visualizations with **Recharts** for a data-driven UX
+
+**Stack:** React · Node.js · Express.js · Supabase · Firebase · Google Gemini AI · Tailwind CSS · Recharts
+
+</details>
+
+<details>
+<summary><b>💈 Salon Management System</b></summary>
+<br/>
+
+> Full-stack salon operations platform — appointment scheduling, customer management, and service handling.
+
+- Responsive UI with integrated backend APIs for bookings and business workflows
+- Admin dashboard for streamlined salon operations
+
+**Stack:** React · Node.js · Express · MongoDB
 
 </details>
 
@@ -123,7 +172,7 @@ const usman = {
 
 <div align="center">
 
-## 🛠️ Tech Arsenal
+## 🛠️ Tech Stack
 
 </div>
 
@@ -131,32 +180,34 @@ const usman = {
 
 **Languages**
 
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
 **Frontend**
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![TanStack](https://img.shields.io/badge/TanStack-FF4154?style=for-the-badge&logo=react&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 
 **Backend & AI**
 
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=dotnet&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET_8-5C2D91?style=for-the-badge&logo=dotnet&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 
 **Databases & Cloud**
 
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Qdrant](https://img.shields.io/badge/Qdrant-FF4454?style=for-the-badge&logo=qdrant&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white)
 
 **Tools & Automation**
@@ -167,6 +218,43 @@ const usman = {
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 </div>
+
+---
+
+<div align="center">
+
+## 🎓 Certifications
+
+</div>
+
+<table align="center" width="90%">
+<tr>
+<td align="center" width="50%">
+
+**📱 Flutter Mobile App Development**
+<br/>*AUCIS — Air University*
+
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+
+MVVM · Google Analytics · Google Play
+
+</td>
+<td align="center" width="50%">
+
+**🌐 Full Stack Web Development**
+<br/>*AUCIS — Air University*
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=nodedotjs&logoColor=white)
+
+Tailwind · Bootstrap · MongoDB · Supabase
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -196,7 +284,7 @@ const usman = {
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/usman11267)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:waseerusman2@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/usman11267)
-[![Portfolio](https://img.shields.io/badge/OpenClip-3B6FFF?style=for-the-badge&logo=vercel&logoColor=white)](https://openclip.lovable.app)
+[![OpenClip](https://img.shields.io/badge/OpenClip-3B6FFF?style=for-the-badge&logo=vercel&logoColor=white)](https://openclip.lovable.app)
 
 <br/>
 
@@ -206,6 +294,6 @@ const usman = {
 
 > *"Build things that matter. Ship before perfect. Learn by doing."*
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,100:3B6FFF&height=80&section=footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3B6FFF,100:0d1117&height=80&section=footer" />
 
 </div>
